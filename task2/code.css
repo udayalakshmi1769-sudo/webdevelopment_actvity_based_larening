@@ -1,1 +1,214 @@
+*{
+  margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:'Poppins',sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display',serif;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.btn{
+    background:#d4af37;
+    color:#fff;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#222;
+}
+
+.menu-container,
+.chef-container,
+.testimonial-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.menu-card,
+.chef-card,
+.testimonial,
+.hours-card{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.menu-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.chef-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.chef-card h3{
+    margin-top:15px;
+}
+
+.ambience{
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.ambience p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+.testimonials{
+    background:#fafafa;
+}
+
+.testimonial p{
+    font-style:italic;
+}
+
+.hours{
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+.hours h2{
+    color:white;
+}
+
+.location{
+    text-align:center;
+}
+
+.reservation{
+    background:#f4f4f4;
+}
+
+.reservation-form{
+    max-width:650px;
+    margin:auto;
+    display:grid;
+    gap:15px;
+}
+
+.reservation-form input{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.reservation-form button{
+    background:#d4af37;
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:5px;
+}
+
+.reservation-form button:hover{
+    background:#b89425;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+}
