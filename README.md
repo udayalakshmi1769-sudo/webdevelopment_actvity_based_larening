@@ -13,6 +13,6 @@ Online Food Ordering Website A food website concept featuring restaurant informa
 
 🌱 My Learning Goals Improve my HTML and CSS skills through hands-on projects Build accessible, mobile-friendly website layouts Practice organizing projects with separate HTML and CSS files Learn more JavaScript and interactive web development Publish projects on GitHub and keep improving them 📌 What I'm Working Toward I'm working toward becoming a web developer by practicing consistently, learning new techniques, and turning ideas into usable websites.
 
-📫 Connect GitHub: Email: [egadhanush983@gmail.com] Portfolio: [file:///C:/Users/egadhanush/Downloads/resume%20(2).htm ] ⭐ Thanks for visiting my profile! Feel free to explore my repositories and follow my web development journey.
+📫 Connect GitHub: Email:https://github.com/udayalakshmi1769-sudo/webdevelopment_actvity_based_larening/tree/main [udayalakshmi1769@gmail.com] Portfolio: [file:///C:/Users/saiteja/Downloads/resume%20(2).htm ] ⭐ Thanks for visiting my profile! Feel free to explore my repositories and follow my web development journey.
 
 While the code is focused, press Alt+F1 for a menu of operations.
