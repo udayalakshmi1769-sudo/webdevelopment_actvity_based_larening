@@ -1,1 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+
+nav{
+    background:#142d5c;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    padding:15px 0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+    transform:scale(1.1);
+}
+
+
+section{
+    padding:100px 10% 60px;
+}
+
+h2{
+    color:#142d5c;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#142d5c,#1d4e89);
+    color:white;
+    text-align:center;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+    animation:float 3s infinite;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.skill{
+    margin:10px 0;
+}
+
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    background:#142d5c;
+    color:white;
+    text-align:right;
+    padding:5px;
+    animation:load 2s ease-in-out;
+}
+
+@keyframes load{
+    from{
+        width:0;
+    }
+}
+
+
+.btn{
+    display:inline-block;
+    background:#142d5c;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0d1e3d;
+    transform:scale(1.05);
+}
+
+
+.contact p{
+    margin:10px 0;
+    text-align:center;
+}
+
+
+footer{
+    background:#142d5c;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<nav>
+<ul>
+<li><a href="#about">Profile</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+<img src="https://via.placeholder.com/180" alt="Profile">
+<h1>Your Name</h1>
+<p>Web Developer | Programmer | Technology Enthusiast</p>
+</section>
+
+
+<section id="about">
+<h2>Profile</h2>
+<div class="card">
+<p>
+I am a passionate software developer with strong interests in web development,
+programming, and creating innovative solutions. I enjoy learning new technologies
+and building projects that solve real-world problems.
+</p>
+</div>
+</section>
+
+
+<section id="education">
+<h2>Educational Qualifications</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>Bachelor's Degree</h3>
+<p>B.Tech in Computer Science</p>
+<p>NRI University</p>
+<p>2026 - 2030</p>
+</div>
+
+<div class="card">
+<h3>Intermediate</h3>
+<p>VASISTHA Junior College</p>
+<p>Percentage: 82%</p>
+</div>
+
+<div class="card">
+<h3>SSC</h3>
+<p>KUMAR High School</p>
+<p>Percentage: 95%</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="skills">
+<h2>Technical Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="progress">
+<div class="progress-bar" style="width:95%;">95%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="progress">
+<div class="progress-bar" style="width:90%;">90%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="progress">
+<div class="progress-bar" style="width:85%;">85%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="progress">
+<div class="progress-bar" style="width:88%;">88%</div>
+</div>
+</div>
+
+</section>
+
+
+<section>
+<h2>Hobbies</h2>
+
+<div class="container">
+<div class="card">📚 Reading Books</div>
+<div class="card">💻 Coding</div>
+<div class="card">🎵 Listening to Music</div>
+<div class="card">🏏 Playing Cricket</div>
+</div>
+
+</section>
+
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Expense Tracker</h3>
+<p>Built a web application to track income, expenses, and savings.</p>
+</div>
+
+<div class="card">
+<h3>Student Management System</h3>
+<p>Created a Python-based system for managing student records.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="achievements">
+<h2>Achievements</h2>
+
+<div class="container">
+
+<div class="card">
+🏆 Won First Prize in Coding Competition
+</div>
+
+<div class="card">
+📜 Certified in Python Programming
+</div>
+
+<div class="card">
+🎯 Completed Multiple Web Development Projects
+</div>
+
+</div>
+
+</section>
+
+
+<section id="resume">
+<h2>Resume</h2>
+
+<div style="text-align:center;">
+<a href="resume.pdf" class="btn" download>
+Download Resume
+</a>
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+<h2>Contact Information</h2>
+
+<p>📧 Email: egadhanush@gmail.com.com</p>
+<p>📱 Phone: +91 9876543210</p>
+<p>🌐 Website: www.yourportfolio.com</p>
+<p>📍 Agiripalli, Andhra Pradesh, India</p>
+
+</section>
+
+<footer>
+<p>&copy; 2026 dhanush| Personal Portfolio Website</p>
+</footer>
+
+</body>
+</html>
